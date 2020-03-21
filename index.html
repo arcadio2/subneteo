@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subneteo</title>
+	<script type="text/javascript" src="js/eventos.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/nose.css">
+</head>
+<body>
+
+<div id="main">
+	<div>
+		<h1> Bienvenido a los ejercicios de subneteo</h1>
+
+		<div class="ejer">
+			<h3> Ejercicio 1: </h3> <br><h2>Convierta a binario una ip</h2> <br> 
+			<h4>Escribe de la forma: 191.168.010.011</h4>
+			<br> 
+			<input type="text" name="" id="binario" onkeypress="return evento(event)" onpaste="return false" ondragstart="return false"  ondragover="return false" oncopy="return false" class="texto">
+			<br> 
+				<input type="button" name="e1c" value="convertir" onclick="return convertirr()" class="boton">
+
+			
+			<br> 
+			<p id="out1" class="out"></p>
+			<p id="out2"class="out"></p>	
+		</div>
+
+		<div class="ejer">
+			<h3>Ejercicio 2: </h3> <br> 
+			Subred por host. Ingresa el numero de hosts validos
+			<br> 
+			<input type="text" name="subredes" placeholder="numero de hosts validos" onkeypress="return numeross(event)" id="host" class="texto">
+			<input type="button" name="hm" id="b2" value="Determinar por hosts" onclick="return determinarxhost()" class="boton">
+			<br>
+			<p id="e2" class="out"></p>
+			<p id="binario2" class="out"></p>
+			<p id="out3" class="out"></p>
+			<div id="btabla" class="out"></div>
+			<div id="tabla" class="out"> </div>
+		</div>
+
+	<div class="ejer">
+		<h3>3</h3>
+		Host Por subred
+		<br>
+		<input type="text" id="subred" placeholder="Ingresa el numero de subredes" onkeypress="return numeross(event)" class="texto">
+		<input type="button" id="b3" value="Determinar por subredes" onclick="return porsubred()" class="boton">
+		<br>
+		<p id="e3" class="out"></p>
+		<p id="binario3"class="out"></p>
+		<p id="out4" class="out"></p>
+		<p id="btabla2" class="out"></p>
+		<p id="otabla" class="out"></p>
+
+
+	</div>
+
+	</div>
+</div>
+
+
+<script type="text/javascript" src="js/subred.js"></script>
+<script type="text/javascript" src="js/binario.js"></script>
+</body>
+</html>
